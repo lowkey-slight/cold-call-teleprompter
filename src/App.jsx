@@ -207,11 +207,11 @@ function FullMapOverlay({ onClose }) {
           {SECTIONS.map(section => {
             const sectionItems = QUICK_REFERENCE.filter(item => {
               const sectionKeywords = {
-                0: ['Beat 1', 'Beat 2', 'Beat 3', 'Beat 4', 'Beat 5'],
-                1: ['Q1', 'Q2', 'Q3'],
-                2: ['Permission ask', 'Pillar 1', 'Pillar 2', 'Pillar 3'],
-                3: ['Zoom ask'],
-                4: ['Post-yes'],
+                0: ['Beat 2 & 3'],
+                1: ['Beat 4'],
+                2: [],
+                3: ['Beat 7'],
+                4: ['Beat 8'],
               }
               return sectionKeywords[section.id]?.some(kw =>
                 item.when.toLowerCase().includes(kw.toLowerCase())
